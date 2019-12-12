@@ -1,0 +1,68 @@
+<!doctype HTML>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/js-datepicker/datepicker.css">
+    <link rel="stylesheet" href="../node_modules/js-datepicker/datepicker.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+
+    <script src="datetimepicker_css.js"></script>
+</head>
+
+<body>
+    <main>
+        <h1>BELIEVE</h1>
+        <h3><span id="today"></span></h3>
+
+        <div class="mainPicker">
+            <label for="demo1">My Quit Date: </label>
+            <input type="Text" id="quitDatePick" maxlength="25" size="25" onchange="calcTimeDiff()">
+            <img src="images2/cal.gif" alt="" onclick="javascript:NewCssCal('quitDatePick','MMMddyyyy','dropdown',true,'24',true)" style="cursor:pointer">
+        </div>
+        <div class="mainSmokeFree">
+            <p><span id="smokeFree"></span></p>
+        </div>
+        <div id="timeline">
+            <div id="progress-full">
+                <div id="progress-bar">&nbsp;</div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <div id="milestone"></div>
+                </div>
+                <div class="column1">
+                    <div id="milestone1"></div>
+                </div>
+                <div class="column2">
+                    <div id="milestone2"></div>
+                </div>
+                <div class="column3">
+                    <div id="milestone3"></div>
+                </div>
+                <div class="column4">
+                    <div id="milestone4"></div>
+                </div>
+                <div class="column5">
+                    <div id="milestone5"></div>
+                </div>
+                <div class="column6">
+                    <div id="milestone6"></div>
+                </div>
+            </div>
+            <div style="clear:both;"></div>
+        </div>
+        <div style="clear:both;"></div>
+        <div id="status"></div>
+        <div class="nav">
+            <a href="breathing_game.html">
+                <div class="button">
+                    <p class="button">breathe</p>
+                </div>
+            </a>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
